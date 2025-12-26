@@ -1,12 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-
+  hub: {
+    db: "postgresql",
+  },
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/hints',
-    '@nuxt/image',
-    '@nuxt/ui'
-  ]
-})
+    "@nuxthub/core",
+    "@nuxt/eslint",
+    "@nuxt/hints",
+    "@nuxt/image",
+    "@nuxt/ui",
+  ],
+});
